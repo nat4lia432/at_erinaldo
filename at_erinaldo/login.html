@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="login.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <form id="form1" onsubmit="return login()">
+    <div class="box">
+      <fieldset>
+        <div class="login-container h1">
+          <h1>Login</h1>
+        </div>
+        <br>
+        <div class="inputBox">
+          <input type="text" name="usarname" id="usarname" class="inputUser" required>
+          <label for="usarname" class="labelInput">Nome</label>
+        </div>
+        <br>
+        <div class="inputBox">
+          <input type="password" name="password" id="password" class="inputUser" required>
+          <label for="password" class="labelInput">Senha</label>
+        </div>
+        <br>
+        <input type="submit" name="submit" id="submit" value="Entrar">
+        <br>
+        <div class="cadastro-container">
+          Não possui login? <a href="cadastro.html">Cadastre-se</a>
+        </div>
+      </fieldset>
+    </div>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

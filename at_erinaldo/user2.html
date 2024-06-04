@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <link rel="stylesheet" href="user.css">
+</head>
+<body>
+
+    <div class="barra-container">
+
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="user1.html">Página Inicial</a></li>
+                <li><a href="user3.html">Cardápio Semanal</a></li>
+                <li><a href="user4.html">Funcionários</a></li>
+                <li><a href="user5.html">Horário</a></li>
+                <li><a href="user6.html">Avisos</a></li>
+            </ul>
+        </nav>
+
+        <h1>Eventos</h1>
+
+        <div class="lg-container">
+            <img id="uploadedImage" width="90px" height="70px">
+        </div>
+
+    </div>
+
+    <div class="cores">
+        <div class="cor1"></div>
+        <div class="cor2"></div>
+        <div class="cor3"></div>
+    </div>
+
+    <div class="teste">
+        <button onclick="int()" class="bnt">Intergil</button>
+        <button onclick="gic()" class="bnt">Gincana</button>
+        <button onclick="mask()" class="bnt">The Mask</button>
+        <button onclick="lei()" class="bnt">LeiturArte</button>
+        <button onclick="car()" class="bnt">Carnaval</button>
+        <button onclick="taca()" class="bnt">Taça</button>
+
+        <div id="caixaB" class="box" style="display:none">
+            <h3>Intergil</h3>
+            <input type="text" id="texto1" readonly>
+            <div id="fotoContainer1"></div>
+            <div id="pdfContainer1"></div>
+        </div>
+
+        <div id="caixaC" class="box" style="display:none">
+            <h3>Gincana</h3>
+            <input type="text" id="texto2" readonly>
+            <div id="fotoContainer2"></div>
+            <div id="pdfContainer2"></div>
+        </div>
+
+        <div id="caixaD" class="box" style="display:none">
+            <h3>The Mask</h3>
+            <input type="text" id="texto3" readonly>
+            <div id="fotoContainer3"></div>
+            <div id="pdfContainer3"></div>
+        </div>
+
+        <div id="caixaE" class="box" style="display:none">
+            <h3>LeiturArte</h3>
+            <input type="text" id="texto4" readonly>
+            <div id="fotoContainer4"></div>
+            <div id="pdfContainer4"></div>
+        </div>
+
+        <div id="caixaF" class="box" style="display:none">
+            <h3>Carnaval</h3>
+            <input type="text" id="texto5" readonly>
+            <div id="fotoContainer5"></div>
+            <div id="pdfContainer5"></div>
+        </div>
+
+        <div id="caixaG" class="box" style="display:none">
+            <h3>Taça Das Casas</h3>
+            <input type="text" id="texto6" readonly>
+            <div id="fotoContainer6"></div>
+            <div id="pdfContainer6"></div>
+        </div>
+    </div>
+
+    <script src="user2.js"></script>
+</body>
+</html>

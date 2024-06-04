@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+    <div class="barra-container">
+        <div class="lg-container">
+            <img src="lgprincipal.jpeg" width="150px" height="80px">
+        </div>
+    </div>
+
+    <div class="cores">
+        <div class="cor1"></div>
+        <div class="cor2"></div>
+        <div class="cor3"></div>
+    </div>
+
+    <div class="container" id="adminContainer"></div>
+    <div>
+        <label for="boxNumber">Box:</label>
+        <select id="boxNumber">
+            <option value="1">Página Inicial</option>
+            <option value="2">Intergil</option>
+            <option value="3">The Mask</option>
+            <option value="4">Gincana</option>
+            <option value="5">Leiturarte</option>
+            <option value="6">Taça</option>
+            <option value="7">Carnaval</option>
+            <option value="8">Cardápio</option>
+            <option value="9">Monitores de Eventos</option>
+            <option value="10">Monitores Gerais</option>
+            <option value="11">Monitores da Biblioteca</option>
+            <option value="12">Monitores da Banda</option>
+            <option value="13">Monitores da Quadra</option>
+            <option value="14">Funcionários</option>
+            <option value="15">Horário</option>
+            <option value="16">Avisos</option> <!-- Nova opção -->
+        </select>
+    
+
+        <label for="contentType">Tipo de conteúdo:</label>
+        <select id="contentType">
+            <option value="text">Texto</option>
+            <option value="image">Imagem</option>
+            <option value="pdf">PDF</option>
+        </select>
+
+        <div id="textInput" class="contentInput">
+            <label for="textContent">Conteúdo:</label>
+            <textarea id="textContent"></textarea>
+        </div>
+
+        <div id="imageInput" class="contentInput" style="display: none;">
+            <label for="imageContent">Imagem:</label>
+            <input type="file" id="imageContent" accept="image/*">
+        </div>
+
+        <div id="pdfInput" class="contentInput" style="display: none;">
+            <label for="pdfContent">PDF:</label>
+            <input type="file" id="pdfContent" accept="application/pdf">
+        </div>
+
+        <button onclick="addContent()">Salvar</button>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>

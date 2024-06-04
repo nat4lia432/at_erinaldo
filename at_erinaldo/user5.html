@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horário</title>
+    <link rel="stylesheet" href="user.css">
+</head>
+<body>
+    
+    <div class="barra-container">
+
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="user1.html">Página Inicial</a></li>
+                <li><a href="user2.html">Eventos</a></li>
+                <li><a href="user3.html">Cardápio</a></li>
+                <li><a href="user4.html">Funcionários</a></li>
+                <li><a href="aviadm.html">Avisos</a></li>
+            </ul>
+        </nav>
+
+        <h1>Horário</h1>
+
+        <div class="lg-container">
+            <img id="uploadedImage" width="90px" height="70px">
+        </div>
+    </div>
+
+    <div class="cores">
+        <div class="cor1"></div>
+        <div class="cor2"></div>
+        <div class="cor3"></div>
+    </div>
+    
+    <div class="box" id="userBoxO">
+    </div>
+
+    <script>
+        // Barra de Navegação
+        const menuToggle = document.querySelector('.menu-toggle');
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+        });
+        
+        // conteúdo //
+        window.addEventListener('load', () => {
+            const savedContent = localStorage.getItem('box15');
+            if (savedContent) {
+                document.getElementById('userBoxO').innerHTML = savedContent;
+            }
+        });
+    </script>
+</body>
+</html>
